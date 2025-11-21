@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+python-multipart
+pypdf
+chromadb
+google-generativeai
+python-dotenv
+langchain-text-splitters
+Pillow
+pyjwt
+cryptography

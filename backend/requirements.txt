@@ -9,3 +9,4 @@ langchain-text-splitters
 Pillow
 pyjwt
 cryptography
+pysqlite3-binary

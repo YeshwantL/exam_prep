@@ -1,4 +1,13 @@
 import os
+# ChromaDB requires sqlite3 >= 3.35. Render's default image might have an older version.
+# This hack swaps the system sqlite3 with pysqlite3-binary.
+try:
+    __import__('pysqlite3')
+    import sys
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except ImportError:
+    pass
+
 import chromadb
 import google.generativeai as genai
 from pypdf import PdfReader
